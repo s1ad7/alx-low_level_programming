@@ -17,7 +17,7 @@ int main(void)
 	}
 	while (m >= 65)
 	{
-		putchar (L);
+		putchar (m));
 	}
 	putchar ('\n');
 	return (0);
