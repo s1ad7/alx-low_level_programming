@@ -1,28 +1,15 @@
-#include "main.h"
-/**
- *  * _strcat - concatenates two strings.
- *   * @dest: destination
- *    * @src: source
- *     * Return: dest
- *     */
-
-char *_strcat(char *dest, char *src)
-{
-		int i;
-			int j;
-
-				i = 0;
-					j = 0;
-
-						while (dest[i])
-									i++;
-							while (src[j])
-									{
-												dest[i] = src[j];
-														i++;
-																j++;
-																	}
-								dest[i] = '\0';
-
-								return (dest);
+#include "main.h"                                                                                                                  
+#include <unistd.h>                                                                                                                     
+                                                                                                                                        
+/**                                                                                                                                     
+ *  * _putchar - writes the character c to stdout                                                                                          
+ *   * @c: The character to print                                                                                                           
+ *    *                                                                                                                                      
+ *     * Return: On success 1.                                                                                                                
+ *      * On error, -1 is returned, and errno is set appropriately.                                                                            
+ *       */                                                                                                                                     
+int _putchar(char c)                                                                                                                    
+{                                                                                                                                       
+	        return (write(1, &c, 1));                                                                                                       
 }
+
