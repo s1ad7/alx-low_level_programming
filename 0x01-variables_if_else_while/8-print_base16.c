@@ -18,6 +18,7 @@ int main(void)
 	{
 		putchar (m);
 	}
+	puthcar('\n');
 
 	return (0);
 }
