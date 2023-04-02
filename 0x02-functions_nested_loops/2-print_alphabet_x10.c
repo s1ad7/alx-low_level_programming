@@ -18,7 +18,8 @@ while (i < 10)
 	{
 	_putchar (ch);
 	}
+	_putchar ('\n');
+	i++;
 }
-_putchar ('\n');
-i++;
 }
+
