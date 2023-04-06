@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- *
- * _isalpha - check for alphabetic character
- * @c : Main character
- * Return : 1 if c is an alphabetic character or 0 for anything else
- */
-
+ *  * _isalpha - checks for alphabetic character
+ *   * @c: the character to be checked
+ *    * Return: 1 for alphabetic character or 0 for anything else
+ *     */
 int _isalpha(int c)
-
-	{
-		 if ((с >= 65 && c <= 97) || (с >= 97 && c <= 122))
-	{
-		return (1);
-	}
-		 return (0);
-	}
+{
+	    if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+		        {
+				        return (1);
+					    }
+	        else
+			    {
+				            return (0);
+					        }
+}
