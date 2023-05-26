@@ -2,20 +2,26 @@
 #include "main.h"
 
 /**
-  * print_line - draws a straight line
-  * @n: the lenght of the line
+  * more_numbers - print 0 to 14, 10 times
   *
   * Return: void
   */
-void print_line(int n)
+void more_numbers(void)
 {
-	if (n > 0)
+	int i = 0;
+	int j = 0;
+
+	while (j < 10)
 	{
-		while (n)
+		while (i < 15)
 		{
-			_putchar('_');
-			n--;
+			if (i > 9)
+				_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+			i++;
 		}
+		_putchar('\n');
+		i = 0;
+		j++;
 	}
-	_putchar('\n');
 }
