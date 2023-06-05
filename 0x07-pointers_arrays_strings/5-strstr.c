@@ -45,5 +45,5 @@ char *_strstr(char *haystack, char *needle)
 	}
 	if (matches == needle_len)
 		return (haystack - matches);
-sh: 1: :wq: not found
+	return (0);
 }
